@@ -1,5 +1,5 @@
 {% set name = "DataProperty" %}
-{% set version = "0.54.0" %}
+{% set version = "0.54.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 42b6efd1d121224938c632941d1bb862280eeb8c0c0a2ef93137e4a2bbc1cb36
+  sha256: 84cf8b9c46ff6067385ef8a8a6c3920d437c82b87bf0d106f875b44f8371d20a
 
 build:
   number: 0
