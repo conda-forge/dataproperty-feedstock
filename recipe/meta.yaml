@@ -1,5 +1,5 @@
 {% set name = "DataProperty" %}
-{% set version = "1.0.1" %}
+{% set version = "1.1.0" %}
 
 
 package:
@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 723e5729fa6e885e127a771a983ee1e0e34bb141aca4ffe1f0bfa7cde34650a4
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.lower() }}-{{ version }}.tar.gz
+  sha256: b038437a4097d1a1c497695c3586ea34bea67fdd35372b9a50f30bf044d77d04
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
